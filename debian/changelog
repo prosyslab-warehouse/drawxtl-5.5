@@ -1,0 +1,123 @@
+drawxtl (5.5-5build1) focal; urgency=medium
+
+  * No-change rebuild for libgcc-s1 package name change.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sun, 22 Mar 2020 16:38:33 +0100
+
+drawxtl (5.5-5) unstable; urgency=medium
+
+  * d/p/fix_segfault.patch: Add patch.
+    - Fix segmentation fault on exit (closes: #853829).
+  * d/p/series: Adjust accordingly.
+
+ -- Daniel Leidert <dleidert@debian.org>  Thu, 26 Dec 2019 01:30:58 +0100
+
+drawxtl (5.5-4) unstable; urgency=low
+
+  * d/compat: Raise to dh level 12.
+  * d/control: Add Rules-Requires-Root: no.
+    (Build-Depends): Raise debhelper version to 12 and depend on
+    debhelper-compat. Add dpkg-dev.
+    (Uploaders): Update my information.
+    (Standards-Version): Bump to 4.4.1.
+    (DM-Upload-Allowed): Remove obsolete field.
+  * d/copyright: Rewrite for DEP-5 compatibility.
+  * d/drawxtl.examples: Install examples.
+  * d/drawxtl.menu: Remove file to fix command-in-menu-file-and-desktop-file.
+  * d/rules: Add hardening. Remove --parallel switch. Use dpkg templates.
+    (override_dh_installexamples): Remove target.
+  * d/upstream. Rename to d/upstream/metadata.
+  * d/p/hardening.patch: Add patch.
+    - Fix format error: format not a string literal and no format arguments.
+  * d/p/povray_default_location.patch: Update.
+    - Fix povray-related file locations (closes: #853837).
+  * d/p/series: Adjust.
+  * d/s/lintian-overrides: Add lintian overrides.
+
+ -- Daniel Leidert <dleidert@debian.org>  Sun, 22 Dec 2019 23:55:21 +0100
+
+drawxtl (5.5-3) unstable; urgency=low
+
+  * debian/control (Suggests): Fixed architectures.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Wed, 06 Jun 2012 22:58:17 +0200
+
+drawxtl (5.5-2) unstable; urgency=low
+
+  * debian/compat: Bumped dh compatibility level to 7.
+  * debian/control: (Vcs-Browser): Fixed.
+    (Standards-Version): Bumped to 3.9.3.
+    (Build-Depends): Removed dpatch. Added libgl2ps-dev. Bumped dh version.
+    (Suggests): Removed povray related packages. They have been removed from
+    Debian. Limit suggestion on openvrml-lookat to non-kfreebsd architectures.
+  * debian/rules: Rewritten for dh 7.
+  * debian/upstream: Added.
+  * debian/README.Debian: Minor update.
+  * debian/README.source: Removed obsolete file.
+  * debian/patches/link_lib2glps.patch: Added.
+    - source/DRAWxtl55/Makefile: Remove gl2ps.cxx from sources.
+  * debian/patches/povray_default_location.dpatch: Renamed to
+    debian/patches/povray_default_location.patch.
+  * debian/patches/00list: Renamed to debian/patches/series and adjusted.
+  * debian/source/format: Added for quilt-based format 3.0.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 04 Jun 2012 23:28:49 +0200
+
+drawxtl (5.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.9.1.
+    (Suggests): Removed virtual package vrml-browser, which is not provided
+    anymore aby any package.
+  * debian/rules: Removed obsolete get-orig-source target.
+    (STRIPPED_UVERSION): Improved calculation.
+  * debian/watch: Remobed obsolete comments.
+  * debian/patches/559897_fix_error_in_pdf.dpatch,
+    debian/patches/DRAWxtl54.pdf.uue: Dropped, fixed upstream.
+  * debian/patches/560461_fix_ftbfs_gcc44.dpatch: Ditto.
+  * debian/patches/arch_with_unsigned_char_fix.dpatch: Ditto.
+  * debian/patches/povray_default_location.dpatch: Adjusted.
+  * debian/patches/00list: Ditto.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 21 Apr 2011 23:53:21 +0200
+
+drawxtl (5.4+dfsg-5) unstable; urgency=low
+
+  * debian/control (Build-Depends): Added sharutils for uudecode.
+    (Depends): Fixed debhelper-but-no-misc-depends.
+  * debian/patches/DRAWxtl54.pdf.uue: Added fixed PDF by Martin Kroeker.
+  * debian/patches/559897_fix_error_in_pdf.dpatch: Added.
+    - Replace broken PDF with fixed version by Martin (closes: #559897).
+  * debian/patches/00list: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 22 Jan 2010 04:06:23 +0100
+
+drawxtl (5.4+dfsg-4) unstable; urgency=low
+
+  * debian/patches/560461_fix_ftbfs_gcc44.dpatch: Added.
+    - CrystalView.cxx: Fix FTBFS with GCC 4.4 (closes: #560461).
+  * debian/patches/00list: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 11 Dec 2009 15:13:04 +0100
+
+drawxtl (5.4+dfsg-3) unstable; urgency=low
+
+  * debian/control (Suggests): Dropped vrweb (removed from Debian).
+  * debian/patches/arch_with_unsigned_char_fix.dpatch: Added.
+    - Fix by Martin Kroeker to run DRAWxtl on treating char as unsigned by
+      default.
+  * debian/patches/00list: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Wed, 18 Nov 2009 23:06:56 +0100
+
+drawxtl (5.4+dfsg-2) unstable; urgency=low
+
+  * debian/rules (build-stamp): Set OS to Linux to fix FTBFS on kfreebsd*.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 29 Sep 2009 16:59:09 +0200
+
+drawxtl (5.4+dfsg-1) unstable; urgency=low
+
+  * Initial release (closes: #428750).
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 27 Sep 2009 01:47:51 +0200

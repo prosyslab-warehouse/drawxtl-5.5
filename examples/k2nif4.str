@@ -1,0 +1,29 @@
+title k2nif4
+rem ICSD Collection Code 73450
+rem Yeh, SK, Wu SY, Lee CS, and Wang Y
+rem Acta Cryst. B, 49, 806-811 (1993)
+cell 4.013 4.013 13.088
+spgp I 4/m m m
+atom K 1 0 0 .35377
+atom Ni 1 0 0 0
+atom F 1 0 .5 0
+atom F 2 0 0 .15331
+axislines   0.00 Gray20
+box  0.020 Black
+background White
+finish   0.00   0.00   0.00   0.00
+sphere Ni    0.300 Blue
+sphere F     0.400 Green
+sphere K     0.600 Red
+mag_trans  1.000  0.000  0.000  0.000  1.000  0.000  0.000  0.000  1.000
+pack  -0.10   1.10  -0.10   1.10  -0.10   1.10
+frame
+cell 4.013 4.013 13.088
+spgp I 4/m m m
+arrow  0.500  0.500  0.500  0.000  0.000 -1.000  1.800  0.150 Green
+arrow  0.000  0.000  0.000  0.000  0.000  1.000  1.800  0.150 Red
+mag_trans  1.000  0.000  0.000  0.000  1.000  0.000  0.000  0.000  1.000
+pack  -0.10   1.10  -0.10   1.10  -0.10   1.10
+noshadow
+view   79.3  -27.3 -176.6
+end

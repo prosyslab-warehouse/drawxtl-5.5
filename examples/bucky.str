@@ -1,0 +1,18 @@
+title Buckyball
+cell 14.16 14.16 14.16
+pack .03 .06 -0.1 .1 .20 .30
+molcomp 1.5
+spgp F m 3
+sphere c 0.4 Red
+bond c c 0.1 1.2 1.5 Gray80
+atom c 1 0.04908 0.00000 0.24510
+atom c 2 0.10028 0.08284 0.21346
+atom c 3 0.18313 0.05120 0.16226
+origin 0 0 0
+view -18 0 0
+box 0.0 Black
+magnification 0.8
+phong 1.0 30.0
+vrml97
+end
+

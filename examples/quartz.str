@@ -1,0 +1,18 @@
+titl low-quartz
+spgp P 32 2 1
+cell 4.913 4.913 5.405 90 90 120
+atom si 1 .46987 0 0
+atom o  1 .4141  .2681  .1181
+xyzoff 0 0 -1/6
+axislines   0.00 White
+box  0.020 Black
+background White
+finish   0.00   0.00   0.00   0.00
+view  -83.0   -6.9    0.7
+sphere o     0.200 Green
+sphere si    0.300 Red
+polysz si  1.806 Red
+pack   0.00   1.00   0.00   1.00   0.00   1.00
+vectors
+end
+

@@ -1,0 +1,10 @@
+drawxtl for Debian
+------------------
+
+To use the examples you must unpack them to some place, where you have write
+permissions. See the BUGS section in drawxtl(1). This is as simple as:
+
+gunzip -c /usr/share/doc/drawxtl/foo.str.gz > ~/foo.str
+
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>,  September 2009

@@ -1,0 +1,178 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: DRAWxtl
+Upstream-Contact: http://www.lwfinger.com/drawxtl/
+ Larry W. Finger <Larry.Finger@lwfinger.net>
+ Martin Kroeker <martin@ruby.chemie.uni-freiburg.de>
+ Brian Toby <brian.toby@anl.gov>
+Source: http://www.lwfinger.com/drawxtl/download.html
+Disclaimer: Please cite this article if you find this program useful:
+ Larry W. Finger, Martin Kroeker, and Brian H. Toby (2007) DRAWxtl, an
+ open-source computer program to produce crystal-structure drawings,
+ J. Applied Crystallography, V40, pp. 188-192.
+
+Files: *
+Copyright: 1996-2009 by Larry Finger, Martin Kroeker and Brian Toby
+License: GPL-2
+Comment: It further comes with this note by Larry Finger:
+ NOTE! This copyright does *not* cover user programs that use DRAWxtl
+ as a helper program - this is merely considered normal use
+ of the program, and does *not* fall under the heading of "derived work".
+ Also note that the GPL below is copyrighted by the Free Software
+ Foundation, but the instance of code that it refers to (the DRAWxtl
+ program) is copyrighted by me, Martin Kroeker, and Brian Toby.
+ .
+ Also note that the only valid version of the GPL as far as this program
+ is concerned is _this_ particular version of the license (ie v2, not
+ v2.2 or v3.x or whatever), unless explicitly otherwise stated.
+
+Files: source/DRAWxtl*/flu_* source/DRAWxtl*/Flu_* source/DRAWxtl*/FLU_*
+Copyright: 2002 Jason Bryan, Ohio Supercomputer Center, Ohio State University
+           2002 Ohio Supercomputer Center, Ohio State University
+License: LGPL-2+
+Comment: The license chosen is the GNU Library General Public License 2 with
+ the following exceptions (see http://www.fltk.org/COPYING.php):
+ .
+ The FLTK library and included programs are provided under the terms of the
+ GNU Library General Public License (LGPL) with the following exceptions:
+ .
+ 1. Modifications to the FLTK configure script, config header file, and
+    makefiles by themselves to support a specific platform do not constitute
+    a modified or derivative work.
+ .
+    The authors do request that such modifications be contributed to the
+    FLTK project - send all contributions to "fltk-bugs@fltk.org".
+ .
+ 2. Widgets that are subclassed from FLTK widgets do not constitute a
+    derivative work.
+ .
+ 3. Static linking of applications and widgets to the FLTK library does not
+    constitute a derivative work and does not require the author to provide
+    source code for the application or widget, use the shared FLTK
+    libraries, or link their applications or widgets against a
+    user-supplied version of FLTK.
+ .
+    If you link the application or widget to a modified version of FLTK,
+    then the changes to FLTK must be provided under the terms of the LGPL
+    in sections 1, 2, and 4.
+ .
+ 4. You do not have to provide a copy of the FLTK license with programs
+    that are linked to the FLTK library, nor do you have to identify the
+    FLTK license in your program or documentation as required by section 6
+    of the LGPL.
+ .
+    However, programs must still identify their use of FLTK. The following
+    example statement can be included in user documentation to satisfy this
+    requirement:
+ .
+    [program/widget] is based in part on the work of the FLTK project
+    (http://www.fltk.org).
+
+Files: source/DRAWxtl*/Fl_Group.cxx
+Copyright: 1998-2005 by Bill Spitzak and others.
+License: LGPL-2+
+
+Files: source/DRAWxtl*/gl2ps.*
+Copyright: 1999-2009 Christophe Geuzaine <geuz@geuz.org>
+License: LGPL-2+ or GL2PS-2+
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA
+ 02110-1301 USA
+Comment: On Debian systems a copy of the GNU Library General Public License
+ (LGPL) 2 is available in the file `/usr/share/common-licenses/LGPL-2'.
+
+License: GL2PS-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GL2PS License as published by
+ Christophe Geuzaine, either version 2 of the License, or (at your
+ option) any later version.
+ .
+ You should have received a copy of the GL2PS License with this
+ library in the file named "COPYING.GL2PS"; if not, I will be glad
+ to provide one.
+ .
+ Following the text of the GL2PS LICENSE taken from COPYING.GL2PS:
+ .
+                             GL2PS LICENSE
+                        Version 2, November 2003
+ .
+                Copyright (C) 2003, Christophe Geuzaine
+ .
+ Permission to use, copy, and distribute this software and its
+ documentation for any purpose with or without fee is hereby granted,
+ provided that the copyright notice appear in all copies and that both
+ that copyright notice and this permission notice appear in supporting
+ documentation.
+ .
+ Permission to modify and distribute modified versions of this software
+ is granted, provided that:
+ .
+ 1) the modifications are licensed under the same terms as this
+ software;
+ .
+ 2) you make available the source code of any modifications that you
+ distribute, either on the same media as you distribute any executable
+ or other form of this software, or via a mechanism generally accepted
+ in the software development community for the electronic transfer of
+ data.
+ .
+ This software is provided "as is" without express or implied warranty.
+
+Files: source/DRAWxtl*/mpVector.* source/DRAWxtl*/MC.*
+Copyright: 1999-2006 Michael Y. Polyakov <myp@andrew.cmu.edu>
+License: GPL-2+
+
+Files: source/DRAWxtl*/MCTable.h
+Copyright: Paul Baurke
+License: public-domain
+ This code has been put into public domain.
+
+Files: debian/**
+Copyright: 2007-2009 Daniel Leidert
+           2009-2019 The debichem team
+Comment: This package was debianized by Daniel Leidert <dleidert@debian.org>
+ on Tue, 12 Jun 2007 14:01:24 +0200.
+License: GPL-2+
+
+License: GPL-2
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License, version 2 of the
+ license as published by the Free Software Foundation.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+Comment: On Debian systems a copy of the GNU General Public License version 2
+ is available in the file `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.

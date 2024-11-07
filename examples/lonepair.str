@@ -1,0 +1,58 @@
+title cs3sbo3
+molcomp   2.40
+edges   0.10 Gray
+rem view 10 -15 0
+rem pack -0.1 1.1 -0.1 1.1 -0.1 1.1
+box  0.000 Black
+magnification   0.50
+inline shelx
+TITL cssbo aus fb48
+CELL   0.7107 9.1368 9.1410 9.1328 90.0021 89.9954 90.0042
+ZERR   2   0.0009 0.0015 0.0015 0.0136 0.0110  0.0106
+LATT -1
+SYMM     Z,   X,   Y
+SYMM     Y,   Z,   X
+SYMM  .5+X,.5-Y,  -Z
+SYMM  .5+Z,.5-X,  -Y
+SYMM  .5+Y,.5-Z,  -X
+SYMM    -X,.5+Y,.5-Z
+SYMM    -Z,.5+X,.5-Y
+SYMM    -Y,.5+Z,.5-X
+SYMM  .5-X,  -Y,.5+Z
+SYMM  .5-Z,  -X,.5+Y
+SYMM  .5-Y,  -Z,.5+X
+SFAC CS
+SFAC SB
+SFAC O
+UNIT 12 4 12
+OMIT 4
+L.S. 10
+BOND
+FMAP 2
+PLAN 20
+WGHT      0.0094      0.4477
+EXTI    0.000773
+FVAR       0.16801
+CS1   1   0.51854  0.51854  0.51854
+CS2   1  0.27736  0.27736   0.27736
+CS3   1  0.77318 0.77318 0.77318
+SB    2  0.00363   0.00363   0.00363
+O     3  0.79574 0.00539 0.04106
+HKLF 4 1
+REM  cssbo aus fb48
+REM R1 =  0.0177 for    919 Fo > 4sig(Fo)  and  0.0379 for all   1124 data
+REM     23 parameters refined using      0 restraints
+axislines   0.00 White
+background White
+finish   0.00   0.00   0.00   0.00
+view   12.7  -17.9   27.9
+phong   1.00  30.00
+origin   0.00   0.00   0.00
+bond SB   O     0.100  1.600  2.400 Gray30
+sphere SB    0.300 Gray10 filter 0.5
+sphere O 1    0.350 NavyBlue
+sphere CS    0.250 Red
+lonepair SB 1  2.000  0.075  0.300 NeonBlue
+pack  -0.10   0.15  -0.10   0.15  -0.10   0.15
+end
+

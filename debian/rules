@@ -1,0 +1,49 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+#export DH_VERBOSE=1
+
+include /usr/share/dpkg/pkg-info.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+CFLAGS  += -Wextra
+LDFLAGS += -Wl,-z,defs -Wl,--as-needed
+
+STRIPPED_UVERSION := $(shell echo $(DEB_VERSION_UPSTREAM) | sed 's/\.//g')
+
+%:
+	dh $@ --buildsystem=makefile
+
+override_dh_auto_build:
+	dh_auto_build -- -C source/DRAWxtl$(STRIPPED_UVERSION)/ \
+	                 OS=Linux \
+	                 prefix=/usr \
+	                 includedir=/usr/include \
+	                 libdir=/usr/lib/ \
+	                 LINKFLTKGL="-lfltk_gl -lfltk -lgl2ps $(LDFLAGS)" \
+	                 OPTIM="$(CPPFLAGS) $(CXXFLAGS) -Wunused -fno-exceptions"
+
+override_dh_auto_clean:
+	dh_auto_clean -- -C source/DRAWxtl$(STRIPPED_UVERSION)/
+
+override_dh_auto_install:
+
+override_dh_install:
+	dh_install exe/DRAWxtl$(STRIPPED_UVERSION) usr/bin/
+
+override_dh_installchangelogs:
+	dh_installchangelogs docs/readme.txt
+
+override_dh_installdocs:
+	dh_installdocs docs/DRAWxtl$(STRIPPED_UVERSION).pdf
+
+override_dh_link:
+	dh_link usr/bin/DRAWxtl$(STRIPPED_UVERSION) usr/bin/drawxtl \
+		usr/share/doc/drawxtl/DRAWxtl$(STRIPPED_UVERSION).pdf usr/share/doc/drawxtl/DRAWxtl.pdf \
+	        usr/share/man/man1/drawxtl.1.gz usr/share/man/man1/DRAWxtl$(STRIPPED_UVERSION).1.gz
+
+override_dh_compress:
+	dh_compress -X*.gz -Ausr/share/doc/$(DEB_SOURCE)/examples/*.*

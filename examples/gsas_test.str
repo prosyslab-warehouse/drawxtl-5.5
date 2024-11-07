@@ -1,0 +1,21 @@
+title Egg Structure
+edges   0.02 Black
+import gsas gsas_test.exp 2
+vrml97
+cutout Gray20
+axislines   0.00 Gray20
+box  0.020 Black
+background White
+polysz Al  2.000 Yellow
+finish   0.00   0.00   0.00   0.00
+view   75.8   78.3   76.0
+phong   1.00  30.00
+bond O    H     0.080  0.700  0.900 Green
+bond O    H     0.030  1.500  2.000 Green
+sphere O     0.050 Red
+sphere H     0.300 Blue
+sphere O     0.200 Green
+polysz Si  2.200 Maroon
+pack  -0.30   1.30  -0.50   1.50  -0.30   1.30
+end
+

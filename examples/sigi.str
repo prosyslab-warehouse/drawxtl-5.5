@@ -1,0 +1,84 @@
+titl imported
+inline shelx
+TITL SIGI in P-1
+CELL 0.71073 6.652 7.758 8.147 73.09 75.99 68.40
+ZERR 2 .002 .002 .002 .03 .03 .03
+SFAC C H N O
+UNIT 14 22 2 6           ! no LATT and SYMM needed for space group P-1
+L.S. 4
+EXTI 0.001               ! refine an isotropic extinction parameter
+WGHT .060 0.15           ! (suggested by program in last job);  WGHT
+OMIT 2 8 0               ! and OMIT are also based on previous output
+BOND $H                  ! include H in bond lengths / angles table
+CONF                     ! all torsion angles except involving hydrogen
+FMAP 2                   ! Fo-Fc Fourier
+PLAN -20                 ! printer plots and full analysis of peak list
+HFIX 147 31 O2           ! initial location of -OH and -CH3 hydrogens from
+HFIX 137 31 C10          ! circular Fourier, then refine torsion, U(H)=fv(3)
+HFIX 93 21 N6            ! -NH2 in plane, xyz ride on N, U(H)=fv(2)
+HFIX 23 21 C5 C11        ! two -CH2- groups, xyz ride on C, U(H)=fv(2)
+HFIX 13 21 C7            ! tertiary CH, xyz ride on C, U(H)=fv(2)
+EQIV $1 X-1, Y, Z        ! define symmetry operation and tabulate H-bond
+RTAB H..O H2 O1_$1       ! distance and angle to symmetry equivalent of O1
+RTAB XHY O2 H2 O1_$1      ! 'H..O' and 'XHY' are table headings
+RTAB H..O H6A O1         ! include intramolecular H-bond in tables
+RTAB XHY N6 H6A O1
+EQIV $2 X+1, Y, Z-1      ! include a further intermolecular H-bond in the
+RTAB H..O H6B O2_$2      ! same tables; involves symmetry equivalent of O2
+RTAB XHY N6 H6B O2_$2
+                                    ! l.s. planes through 5-ring and through
+MPLA 5 C7 C11 C8 C4 O3 O1 N6 C9 C10 ! CNC=CCC moiety, then find deviations
+MPLA 6 C10 N6 C9 C8 C11 C4 O1 O3 C7 ! of last 4 and 3 named atoms resp. too
+FVAR 1 .06 .07           ! overall scale and free variables for U(H)
+REM name sfac# x y z sof(+10 to fix it) U11 U22 U33 U23 U13 U12 follow
+O1      4   0.30280   0.17175   0.68006  11.00000   0.02309   0.04802 =
+        0.02540  -0.00301  -0.00597  -0.01547
+O2      4  -0.56871   0.23631   0.96089  11.00000   0.02632   0.04923 =
+        0.02191  -0.00958   0.00050  -0.02065
+O3      4  -0.02274   0.28312   0.83591  11.00000   0.02678   0.04990 =
+        0.01752  -0.00941  -0.00047  -0.02109
+C4      1   0.10358   0.23458   0.68664  11.00000   0.02228   0.02952 =
+        0.01954  -0.00265  -0.00173  -0.01474
+C5      1  -0.33881   0.18268   0.94464  11.00000   0.02618   0.03480 =
+        0.01926  -0.00311  -0.00414  -0.01624
+N6      3   0.26405   0.17085   0.33925  11.00000   0.03003   0.04232 =
+        0.02620  -0.01312   0.00048  -0.01086
+C7      1  -0.25299   0.33872   0.82228  11.00000   0.02437   0.03111 =
+        0.01918  -0.00828  -0.00051  -0.01299
+C8      1  -0.03073   0.27219   0.55976  11.00000   0.02166   0.02647 =
+        0.01918  -0.00365  -0.00321  -0.01184
+C9      1   0.05119   0.24371   0.39501  11.00000   0.02616   0.02399 =
+        0.02250  -0.00536  -0.00311  -0.01185
+C10     1  -0.10011   0.29447   0.26687  11.00000   0.03877   0.04903 =
+        0.02076  -0.01022  -0.00611  -0.01800
+C11     1  -0.26553   0.36133   0.63125  11.00000   0.02313   0.03520 =
+        0.01862  -0.00372  -0.00330  -0.01185
+HKLF 4     ! read intensity data from 'sigi.hkl'; terminates '.ins' file
+box  0.000 Black
+background White
+axislines   0.02 White
+finish   0.70   0.30   0.08   0.01
+molcomp   2.00
+view  -74.1   26.4   34.4
+origin   0.88   0.30  -0.31
+bond C    N     0.100  1.234  1.434 Red
+bond C    O     0.100  1.126  1.600 Red
+bond C    C     0.100  1.270  1.600 Red
+sphere O     0.400 Green
+sphere C     0.300 Red
+sphere N     0.300 Blue
+labeltext  1.359  0.118 -0.386 O1
+labeltext  1.329  0.121 -0.716 N6
+labeltext  0.957  0.250 -0.787 C10
+labeltext  0.965  0.312 -0.083 O3
+labeltext  0.398  0.277  0.044 O2
+labeltext  0.635  0.215  0.012 C5
+labeltext  0.610  0.404 -0.443 C11
+labeltext  1.028  0.234 -0.469 C8
+labeltext  1.089  0.260 -0.250 C4
+labeltext  0.830  0.365 -0.581 C9
+labeltext  0.767  0.308 -0.249 C7
+labelscale 0.9
+pack  -0.05   0.80  -0.05   0.75  -0.05   0.05
+end
+

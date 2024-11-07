@@ -1,0 +1,20 @@
+titl cassiterite
+spgp P 42/m n m
+cell 4.738 4.738 3.187
+atom Sn 1 0 0 0
+atom O  1 .3071 .3071 0
+axislines   0.00 Black
+box  0.020 Black
+background White
+finish   0.00   0.00   0.00   0.00
+edges   0.02 Black
+mapread vsp elfcar
+mapregion 0 1 0 1 0 1
+view   11.7   -9.8   -6.0
+sphere Sn    0.400 Red
+sphere O     0.300 Green
+polyvert Sn O  2.806 Red
+pack  -0.45   1.45  -0.45   1.45  -0.45   1.45
+mapcontour  0.500 solid Blue
+end
+

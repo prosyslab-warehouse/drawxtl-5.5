@@ -1,0 +1,26 @@
+titl faujasit
+cell 24.713 24.713 24.713 90. 90. 90.
+spgp F d 3 m
+edges   0.02 Black
+rem box 0.02 Black
+atom Si  1  0.0362 0.3037 0.1247
+rem add dummy atoms "o" and "h" in the centers of the groups
+atom o   2  0.125 0.125 0.125
+atom h   3  0.    0.    0.
+rem bounds 17.5 17.5 17.5
+magnification   0.80
+vrml97
+molcomp   1.50
+cutout Gray20
+axislines   0.02 Gray20
+box  0.020 Black
+background White
+finish   0.00   0.00   0.00   0.00
+list   5.00
+view  113.3  -33.3  -13.1
+polysz h  4.000 MediumBlue
+polyvert o Si  5.900 Red
+pack  -0.30   1.30  -0.30   1.30  -0.30   1.30
+rem xyzoff 0.125 0.125 0.125
+end
+

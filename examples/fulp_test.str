@@ -1,0 +1,20 @@
+titl FullProf Test
+spgp P b n m
+cell 5.536 5.747 7.693
+edges   0.02 Black
+axislines   0.02 White
+box  0.020 Green
+background White
+finish   0.00   0.00   0.00   0.00
+labelscale 0.900
+view  167.2    9.1  176.1
+labeltext -0.090 -0.087 -0.065 o
+labeltext  1.090  0.000  0.000 a
+labeltext  0.000  1.087  0.000 b
+labeltext  0.000  0.000  1.065 c
+pack   0.00   1.00   0.00   1.00   0.00   1.00
+mapcontour  1.000 mesh Red
+mapcontour  0.600 mesh Blue
+mapread flp lamn_3t2.bin
+mapregion 0.0000 1.0000 0.0000 1.0000 0.0000 1.0000
+end

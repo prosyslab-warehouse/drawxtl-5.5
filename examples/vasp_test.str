@@ -1,0 +1,22 @@
+titl VASP Test
+spgp P 1
+cell 2.611 3.716 2.541
+edges   0.02 Black
+axislines   0.02 White
+box  0.020 Black
+background White
+finish   0.00   0.00   0.00   0.00
+labelscale 0.900
+view  136.1   51.1  139.7
+labeltext -0.156 -0.055 -0.180 o
+labeltext  1.185 -0.096 -0.081 a
+labeltext -0.000  0.940 -0.187 b
+labeltext  0.009 -0.085  1.100 c
+pack   0.00   1.00   0.00   1.00   0.00   1.00
+mapcontour  0.750 mesh Red
+mapcontour  0.900 mesh Green
+mapcontour  0.600 solid Blue
+mapread vsp elfcar
+mapregion 0.0000 1.0000 0.0000 1.0000 0.0000 1.0000
+end
+

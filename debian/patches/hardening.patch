@@ -1,0 +1,67 @@
+Author: Daniel Leidert <dleidert@debian.org>
+Subject: Fix hardening error messages.
+
+* source/DRAWxtl55/CrystalView.cxx: Fix error: format not a string literal and no format arguments.
+* source/DRAWxtl55/Edit1.cxx: Ditto.
+* source/DRAWxtl55/Import.cxx: Ditto.
+
+--- a/source/DRAWxtl55/CrystalView.cxx
++++ b/source/DRAWxtl55/CrystalView.cxx
+@@ -219,7 +219,7 @@
+ 		if (!(inp = fopen (newfile, "r"))) {
+ 		    sprintf (string, "The file you selected ('%s') cannot be read\n"
+ 			     "Do you wish to continue?", newfile);
+-		    if (fl_choice (string, "No", "Yes", NULL)) {
++		    if (fl_choice ("%s", "No", "Yes", NULL, string)) {
+ 			inp = fopen (tmp_file, "w");
+ 			fclose (inp);
+ 			Edit_STR_cb (NULL, &one);
+@@ -1066,7 +1066,7 @@
+ 		      "The implied output file ('%s') will be overwritten.\n"
+ 		      "Do you wish to continue?", tmp_file);
+ 	    fclose (newstr);
+-	    if (!fl_choice (string, "No", "Yes", NULL)) {
++	    if (!fl_choice ("%s", "No", "Yes", NULL, string)) {
+ 		chdir (drvui->Cur_Dir);	// restore the original directory
+ 		return;
+ 	    }
+@@ -1074,7 +1074,7 @@
+ 	if (!(inp = fopen (newfile, "r"))) {
+ 	    snprintf (string, 2048, "The file you selected ('%s') cannot be read\n"
+ 		      "Do you wish to continue?", newfile);
+-	    if (fl_choice (string, "No", "Yes", NULL)) {
++	    if (fl_choice ("%s", "No", "Yes", NULL, string)) {
+ 		inp = fopen (tmp_file, "w");
+ 		fclose (inp);
+ 		Edit_STR_cb (NULL, &one);
+@@ -2226,7 +2226,7 @@
+ 
+ 	    sprintf (string, "The file you selected ('%s') cannot be read\n"
+ 		     "Do you wish to continue?", drvui->Cur_File);
+-	    if (fl_choice (string, "No", "Yes", NULL)) {
++	    if (fl_choice ("%s", "No", "Yes", NULL, string)) {
+ 		inp = fopen (drvui->Cur_File, "w");
+ 		fclose (inp);
+ 		Edit_STR_cb (NULL, &one);
+--- a/source/DRAWxtl55/Edit1.cxx
++++ b/source/DRAWxtl55/Edit1.cxx
+@@ -2722,7 +2722,7 @@
+ 
+ 	    sprintf (string, "A molecular completion distance of %5.2f is very\n"
+ 		     "large. Are you sure you wish to continue?", temp);
+-	    if (!fl_choice (string, "No", "Yes", NULL))
++	    if (!fl_choice ("%s", "No", "Yes", NULL, string))
+ 		return;
+ 	}
+ 	drvui->mol_d = temp;
+--- a/source/DRAWxtl55/Import.cxx
++++ b/source/DRAWxtl55/Import.cxx
+@@ -131,7 +131,7 @@
+ 	    sprintf (tstring,
+ 		     "This CIF has %d data blocks with labels\n%s.\nPlease enter the number"
+ 		     " of the one to use:", numblocks, dataname);
+-	    const char *which = fl_input (tstring, "1");
++	    const char *which = fl_input ("%s", "1", tstring);
+ 
+ 	    if (!which) {
+ 		if (!in_line) fclose (impin);

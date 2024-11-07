@@ -1,0 +1,14 @@
+Author: Daniel Leidert <daniel.leidert@wgdd.de>
+Description: Don't compile internal copy of gl2ps.
+Forwarded: no
+
+--- a/source/DRAWxtl55/Makefile
++++ b/source/DRAWxtl55/Makefile
+@@ -193,7 +193,6 @@
+ 	Flu_Spinner.cxx \
+ 	Fourier.cxx \
+ 	Generate_Drawing.cxx \
+-	gl2ps.cxx \
+ 	gl2gif.cxx \
+ 	Help.cxx \
+ 	Import.cxx \

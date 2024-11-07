@@ -1,0 +1,47 @@
+Source: drawxtl
+Section: science
+Priority: optional
+Maintainer: Debichem Team <debichem-devel@lists.alioth.debian.org>
+Uploaders: Daniel Leidert <dleidert@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               dpkg-dev (>= 1.16.1),
+               freeglut3-dev,
+               libfltk1.1-dev | libfltk-dev,
+               libgl1-mesa-dev,
+               libgl2ps-dev,
+               libglu1-mesa-dev,
+               libx11-dev,
+               libxext-dev,
+               libxft-dev,
+               libxinerama-dev,
+               libxpm-dev,
+               sharutils
+Standards-Version: 4.4.1
+Homepage: http://www.lwfinger.com/drawxtl/index.html
+Vcs-Browser: https://salsa.debian.org/debichem-team/drawxtl
+Vcs-Git: https://salsa.debian.org/debichem-team/drawxtl.git
+Rules-Requires-Root: no
+
+Package: drawxtl
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: openvrml-lookat [!kfreebsd-any !hurd-any]
+Description: crystal structure viewer
+ DRAWxtl reads a basic description of the crystal structure, which includes
+ unit-cell parameters, space group, atomic coordinates, thermal parameters or
+ a Fourier map, and outputs a geometry object that contains polyhedra, planes,
+ lone-pair cones, spheres or ellipsoids, bonds, iso-surface Fourier contours
+ and the unit-cell boundary.
+ .
+ Four forms of graphics are produced:
+ .
+  * an OpenGL window for immediate viewing
+  * the Persistence of Vision Ray Tracer (POV-RAY) scene language for
+    publication-quality drawings
+  * the Virtual Reality Modeling Language (VRML) for dissemination
+    across the Internet
+  * a Postscript rendering of the OpenGL window for those who want
+    high-quality output but do not have POV-RAY installed.
+ .
+ File formats DRAWxtl can read include CIF, FDAT, FullProf (pcr), GSAS, SCHAKAL,
+ SHELX, DISCUS and WIEN2k.

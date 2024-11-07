@@ -1,0 +1,61 @@
+titl imported
+inline shelx
+TITL  CaZn5 (Probe 7: Ca15Zn85, d.h. Zn-reichster Teil
+TITL  CCD 2566; T= 203 K !! Zn2-Hantel ganz deutlich !!!
+CELL   0.7107  5.3338    5.3338    4.3004   90.0000   90.0000  120.0000
+ZERR    1      0.0001    0.0000    0.0001    0.0000    0.0000    0.0000
+REM ***************************
+REM * Raumgruppe P6/mmm       *
+REM ***************************
+LATT 1
+SYMM   -Y,    X-Y, Z
+SYMM    Y-X, -X,   Z
+SYMM    Y,    X,   Z
+SYMM   -X,    Y-X, Z
+SYMM    X-Y,  -Y,  Z
+SYMM    X,    Y,  -Z
+SYMM   -Y,    X-Y,-Z
+SYMM    Y-X, -X,  -Z
+SYMM    Y,    X,  -Z
+SYMM   -X,    Y-X,-Z
+SYMM    X-Y, -Y,  -Z
+SFAC CA ZN
+UNIT 0.87 5.26
+OMIT 0
+L.S. 20
+ACTA
+CONN 40 3.0 $Zn $Zn
+CONN 40 3.0 $Zn $CA
+WGHT    0.017900
+EXTI    0.087246
+FVAR       1.01607   0.63242   0.00922   0.87090
+CA1   1    0.000000    0.000000    0.000000    40.04167    0.01051    0.01051 =
+         0.01883    0.00000    0.00000    0.00525
+ZN3   2    0.000000    0.000000    0.310636   -40.08334    0.01114    0.01114 =
+         0.00928    0.00000    0.00000    0.00557
+ZN1   2    0.500000    0.000000    0.500000    10.12500    0.01204    0.00728 =
+         0.01571    0.00000    0.00000    0.00364
+ZN21  2    0.333333    0.666667    0.000000    20.08333   31.00000
+ZN22  2    0.293237    0.586474    0.000000   -20.08333   31.00000
+HKLF 4 1   1 0 0   0 1 0    0 0 1
+box  0.020 Black
+background White
+ellipsoids   0.50
+axislines   0.00 Gray20
+finish   0.70   0.30   0.08   0.01
+orthographic
+sphere CA    0.100 Red
+sphere ZN    0.100 Green
+labeltext -0.094 -0.094 -0.116 o
+labeltext  1.094  0.000  0.000 a
+labeltext  0.000  1.094  0.000 b
+labeltext  0.000  0.000  1.116 c
+pack  -0.05   1.05  -0.05   1.05  -0.05   1.05
+view   -0.2    0.1  -21.7
+mapcontour  150.000 mesh Blue
+mapcontour  100.000 mesh Red
+mapcontour  50.000 mesh Yellow
+mapcontour  10.000 mesh Cyan
+mapread m81 cazn5_jpdf_xyz.m81
+mapregion 0.0000 1.0000 0.0000 1.0000 0.0000 1.0000
+end

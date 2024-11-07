@@ -1,0 +1,189 @@
+Author: Daniel Leidert <dleidert@debian.org>
+Subject: Fix segmentation fault on exit
+Bug-Debian: https://bugs.debian.org/853829
+
+Fix a segmentation fault when leaving the application.
+
+--- a/source/DRAWxtl55/CrystalView.cxx
++++ b/source/DRAWxtl55/CrystalView.cxx
+@@ -332,7 +332,7 @@
+ {
+ // call the destructor for all open windows and delete the database
+     if (arrows) {
+-	arrows->ArrowWindow->~Fl_Window ();
++	//arrows->ArrowWindow->~Fl_Window ();
+ 	delete (arrows->ArrowWindow);
+ 	delete (arrows->ArrowBuffer);
+ 	delete (arrows);
+@@ -341,50 +341,50 @@
+     if (Bonds) {
+ //        delete(Bonds->Bond_Output_Buffer);
+ //        delete(Bonds->BondBuffer);
+-	Bonds->Bond_Edit_Window->~Fl_Window ();
++	//Bonds->Bond_Edit_Window->~Fl_Window ();
+ 	delete (Bonds);
+ 	Bonds = NULL;
+     }
+     if (Configure) {
+-	Configure->ConfigWindow->~Fl_Window ();
++	//Configure->ConfigWindow->~Fl_Window ();
+ 	delete (Configure->ConfigWindow);
+ 	delete (Configure);
+ 	Configure = NULL;
+     }
+     if (MiscConfigure) {
+-	MiscConfigure->MiscConfigWindow->~Fl_Window ();
++	//MiscConfigure->MiscConfigWindow->~Fl_Window ();
+ 	delete (MiscConfigure->MiscConfigWindow);
+ 	delete (MiscConfigure);
+ 	MiscConfigure = NULL;
+     }
+     if (MSMSConfigure) {
+-	MSMSConfigure->MSMSConfigWindow->~Fl_Window ();
++	//MSMSConfigure->MSMSConfigWindow->~Fl_Window ();
+ 	delete (MSMSConfigure->MSMSConfigWindow);
+ 	delete (MSMSConfigure);
+ 	MSMSConfigure = NULL;
+     }
+     if (edtprm) {
+-	edtprm->editWindow->~Fl_Window ();
++	//edtprm->editWindow->~Fl_Window ();
+ 	delete (edtprm->editWindow);
+ 	delete (edtprm);
+ 	edtprm = NULL;
+     }
+     if (ellipsoids) {
+-	ellipsoids->Ellips_Window->~Fl_Window ();
++	//ellipsoids->Ellips_Window->~Fl_Window ();
+ 	delete (ellipsoids->Ellips_Window);
+ 	delete (ellipsoids->ColorInputBuf);
+ 	delete (ellipsoids);
+ 	ellipsoids = NULL;
+     }
+     if (LonePairs) {
+-	LonePairs->LonePair_Edit_Window->~Fl_Window ();
++	//LonePairs->LonePair_Edit_Window->~Fl_Window ();
+ 	delete (LonePairs->LonePair_Edit_Window);
+ 	delete (LonePairs->LonePairBuffer);
+ 	delete (LonePairs);
+ 	LonePairs = NULL;
+     }
+     if (Maps) {
+-	Maps->Maps_Edit_Window->~Fl_Window ();
++	//Maps->Maps_Edit_Window->~Fl_Window ();
+ 	delete (Maps->Maps_Edit_Window);
+ 	delete (Maps->MapsBuffer);
+ 	delete (Maps);
+@@ -397,13 +397,13 @@
+ 	Modparms = NULL;
+     }
+     if (MiscConfigure) {
+-	MiscConfigure->MiscConfigWindow->~Fl_Window ();
++	//MiscConfigure->MiscConfigWindow->~Fl_Window ();
+ 	delete (MiscConfigure->MiscConfigWindow);
+ 	delete (MiscConfigure);
+ 	MiscConfigure = NULL;
+     }
+     if (Polyhedra) {
+-	Polyhedra->Polyhedra_Edit_Window->~Fl_Window ();
++	//Polyhedra->Polyhedra_Edit_Window->~Fl_Window ();
+ 	delete (Polyhedra->Polyhedra_Edit_Window);
+ 	delete (Polyhedra->PolyhedraBuffer);
+ 	delete (Polyhedra->Polyhedra_Output_Buffer);
+@@ -411,13 +411,13 @@
+ 	Polyhedra = NULL;
+     }
+     if (Slabs) {
+-	Slabs->SlabWindow->~Fl_Window ();
++	//Slabs->SlabWindow->~Fl_Window ();
+ 	delete (Slabs->SlabWindow);
+ 	delete (Slabs);
+ 	Slabs = NULL;
+     }
+     if (Spheres) {
+-	Spheres->Sphere_Edit_Window->~Fl_Window ();
++	//Spheres->Sphere_Edit_Window->~Fl_Window ();
+ 	delete (Spheres->Sphere_Edit_Window);
+ 	if (Spheres->SphereBuffer) {
+ 	    delete (Spheres->SphereBuffer);
+@@ -427,7 +427,7 @@
+ 	Spheres = NULL;
+     }
+     if (listwindow1) {
+-	listwindow1->~Fl_Window ();
++	//listwindow1->~Fl_Window ();
+ 	if (textbuf1) {
+ 	    delete (textbuf1);
+ 	    textbuf1 = NULL;
+@@ -436,7 +436,7 @@
+ 	listwindow1 = NULL;
+     }
+     if (listwindow2) {
+-	listwindow2->~Fl_Window ();
++	//listwindow2->~Fl_Window ();
+ 	if (textbuf2) {
+ 	    delete (textbuf2);
+ 	    textbuf2 = NULL;
+@@ -445,7 +445,7 @@
+ 	listwindow2 = NULL;
+     }
+     if (listwindow3) {
+-	listwindow3->~Fl_Window ();
++	//listwindow3->~Fl_Window ();
+ 	if (textbuf3) {
+ 	    delete (textbuf3);
+ 	    textbuf3 = NULL;
+@@ -454,7 +454,7 @@
+ 	listwindow3 = NULL;
+     }
+     if (helpwindow) {
+-	helpwindow->~Fl_Window ();
++	//helpwindow->~Fl_Window ();
+ 	if (helpbuf) {
+ 	    delete (helpbuf);
+ 	    helpbuf = NULL;
+@@ -463,7 +463,7 @@
+ 	helpwindow = NULL;
+     }
+     if (helpwindow1) {
+-	helpwindow1->~Fl_Window ();
++	//helpwindow1->~Fl_Window ();
+ 	if (helpbuf1) {
+ 	    delete (helpbuf1);
+ 	    helpbuf1 = NULL;
+@@ -472,22 +472,22 @@
+ 	helpwindow1 = NULL;
+     }
+     if (helpwindow2) {
+-	helpwindow2->~Fl_Window ();
++	//helpwindow2->~Fl_Window ();
+ 	delete (helpwindow2);
+ 	helpwindow2 = NULL;
+     }
+     if (helpwindow3) {
+-	helpwindow3->~Fl_Window ();
++	//helpwindow3->~Fl_Window ();
+ 	delete (helpwindow3);
+ 	helpwindow3 = NULL;
+     }
+     if (helpwindow4) {
+-	helpwindow4->~Fl_Window ();
++	//helpwindow4->~Fl_Window ();
+ 	delete (helpwindow4);
+ 	helpwindow4 = NULL;
+     }
+     if (helpwindow5) {
+-	helpwindow5->~Fl_Window ();
++	//helpwindow5->~Fl_Window ();
+ 	delete (helpwindow5);
+ 	helpwindow5 = NULL;
+     }
+@@ -498,7 +498,7 @@
+ 	helpwindow6 = NULL;
+     }
+     if (textwindow) {
+-	textwindow->~Fl_Window ();
++	//textwindow->~Fl_Window ();
+ 	if (textbuf) {
+ 	    delete (textbuf);
+ 	    textbuf = NULL;

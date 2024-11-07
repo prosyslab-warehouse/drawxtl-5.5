@@ -1,0 +1,21 @@
+titl Stishovite
+cell 4.1803 4.1803 2.6580
+spgp P 42/m n m
+atom Si 1 0 0 0
+atom O  1 .3174 .3174 .0
+edges   0.04 Black
+vrml97
+axislines   0.02 Gray20
+box  0.020 Black
+background White
+finish   0.70   0.30   0.08   0.01
+labelscale 0.900
+view   11.4   -7.6   -3.9
+vectors -7.953 -8.446 -3.340
+sphere O     0.200 Green
+polysz Si  2.000 Red
+labeltext  0.335  0.000  0.000 a
+labeltext -0.028  0.335  0.029 b
+labeltext -0.076 -0.097  0.557 c
+pack  -0.90   1.85  -0.90   1.95  -0.90   2.00
+end

@@ -1,0 +1,476 @@
+ 
+data_sl97 
+ 
+_audit_creation_method            SHELXL-97 
+_chemical_name_systematic 
+; 
+ ? 
+; 
+_chemical_name_common             ? 
+_chemical_melting_point           ? 
+_chemical_formula_moiety          ? 
+_chemical_formula_sum 
+ 'Ba2 In4' 
+_chemical_formula_weight          733.96 
+ 
+loop_ 
+ _atom_type_symbol 
+ _atom_type_description 
+ _atom_type_scat_dispersion_real 
+ _atom_type_scat_dispersion_imag 
+ _atom_type_scat_source 
+ 'Ba'  'Ba'  -0.3244   2.2819 
+ 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4' 
+ 'In'  'In'  -0.7276   1.3100 
+ 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4' 
+ 
+_symmetry_cell_setting            ? 
+_symmetry_space_group_name_H-M    'I m m a'
+ 
+loop_ 
+ _symmetry_equiv_pos_as_xyz 
+ 'x, y, z' 
+ 'x, -y, -z' 
+ 'x, y+1/2, -z' 
+ 'x, -y+1/2, z' 
+ 'x+1/2, y+1/2, z+1/2' 
+ 'x+1/2, -y+1/2, -z+1/2' 
+ 'x+1/2, y+1, -z+1/2' 
+ 'x+1/2, -y+1, z+1/2' 
+ '-x, -y, -z' 
+ '-x, y, z' 
+ '-x, -y-1/2, z' 
+ '-x, y-1/2, -z' 
+ '-x+1/2, -y+1/2, -z+1/2' 
+ '-x+1/2, y+1/2, z+1/2' 
+ '-x+1/2, -y, z+1/2' 
+ '-x+1/2, y, -z+1/2' 
+ 
+_cell_length_a                    5.2204(19) 
+_cell_length_b                    8.504(3) 
+_cell_length_c                    8.520(3) 
+_cell_angle_alpha                 90.00 
+_cell_angle_beta                  90.00 
+_cell_angle_gamma                 90.00 
+_cell_volume                      378.2(2) 
+_cell_formula_units_Z             2 
+_cell_measurement_temperature     293(2) 
+_cell_measurement_reflns_used     ? 
+_cell_measurement_theta_min       ? 
+_cell_measurement_theta_max       ? 
+ 
+_exptl_crystal_description        ? 
+_exptl_crystal_colour             ? 
+_exptl_crystal_size_max           ? 
+_exptl_crystal_size_mid           ? 
+_exptl_crystal_size_min           ? 
+_exptl_crystal_density_meas       ? 
+_exptl_crystal_density_diffrn     6.445 
+_exptl_crystal_density_method     'not measured' 
+_exptl_crystal_F_000              616 
+_exptl_absorpt_coefficient_mu     22.114 
+_exptl_absorpt_correction_type    ? 
+_exptl_absorpt_correction_T_min   ? 
+_exptl_absorpt_correction_T_max   ? 
+_exptl_absorpt_process_details    ? 
+ 
+_exptl_special_details 
+; 
+ ? 
+; 
+ 
+_diffrn_ambient_temperature       293(2) 
+_diffrn_radiation_wavelength      0.71070 
+_diffrn_radiation_type            MoK\a 
+_diffrn_radiation_source          'fine-focus sealed tube' 
+_diffrn_radiation_monochromator   graphite 
+_diffrn_measurement_device_type   ? 
+_diffrn_measurement_method        ? 
+_diffrn_detector_area_resol_mean  ? 
+_diffrn_standards_number          ? 
+_diffrn_standards_interval_count  ? 
+_diffrn_standards_interval_time   ? 
+_diffrn_standards_decay_%         ? 
+_diffrn_reflns_number             531 
+_diffrn_reflns_av_R_equivalents   0.0321 
+_diffrn_reflns_av_sigmaI/netI     0.0377 
+_diffrn_reflns_limit_h_min        -7 
+_diffrn_reflns_limit_h_max        6 
+_diffrn_reflns_limit_k_min        -5 
+_diffrn_reflns_limit_k_max        11 
+_diffrn_reflns_limit_l_min        -9 
+_diffrn_reflns_limit_l_max        6 
+_diffrn_reflns_theta_min          3.38 
+_diffrn_reflns_theta_max          28.61 
+_reflns_number_total              238 
+_reflns_number_gt                 227 
+_reflns_threshold_expression      >2sigma(I) 
+ 
+_computing_data_collection        ? 
+_computing_cell_refinement        ? 
+_computing_data_reduction         ? 
+_computing_structure_solution     'SHELXS-97 (Sheldrick, 1990)' 
+_computing_structure_refinement   'SHELXL-97 (Sheldrick, 1997)' 
+_computing_molecular_graphics     ? 
+_computing_publication_material   ? 
+ 
+_refine_special_details 
+; 
+ Refinement of F^2^ against ALL reflections.  The weighted R-factor wR and 
+ goodness of fit S are based on F^2^, conventional R-factors R are based 
+ on F, with F set to zero for negative F^2^. The threshold expression of 
+ F^2^ > 2sigma(F^2^) is used only for calculating R-factors(gt) etc. and is 
+ not relevant to the choice of reflections for refinement.  R-factors based 
+ on F^2^ are statistically about twice as large as those based on F, and R- 
+ factors based on ALL data will be even larger. 
+; 
+ 
+_refine_ls_structure_factor_coef  Fsqd  
+_refine_ls_matrix_type            full 
+_refine_ls_weighting_scheme       calc  
+_refine_ls_weighting_details 
+ 'calc w=1/[\s^2^(Fo^2^)+(0.0385P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3' 
+_atom_sites_solution_primary      direct 
+_atom_sites_solution_secondary    difmap 
+_atom_sites_solution_hydrogens    geom 
+_refine_ls_hydrogen_treatment     mixed 
+_refine_ls_extinction_method      SHELXL 
+_refine_ls_extinction_coef        0.0037(5) 
+_refine_ls_extinction_expression 
+ 'Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^' 
+_refine_ls_number_reflns          238 
+_refine_ls_number_parameters      12 
+_refine_ls_number_restraints      0 
+_refine_ls_R_factor_all           0.0283 
+_refine_ls_R_factor_gt            0.0265 
+_refine_ls_wR_factor_ref          0.0644 
+_refine_ls_wR_factor_gt           0.0633 
+_refine_ls_goodness_of_fit_ref    1.086 
+_refine_ls_restrained_S_all       1.086 
+_refine_ls_shift/su_max           0.000 
+_refine_ls_shift/su_mean          0.000 
+ 
+loop_ 
+ _atom_site_label 
+ _atom_site_type_symbol 
+ _atom_site_fract_x 
+ _atom_site_fract_y 
+ _atom_site_fract_z 
+ _atom_site_U_iso_or_equiv 
+ _atom_site_adp_type 
+ _atom_site_occupancy 
+ _atom_site_symmetry_multiplicity 
+ _atom_site_calc_flag 
+ _atom_site_refinement_flags 
+ _atom_site_disorder_assembly 
+ _atom_site_disorder_group 
+Ba1 Ba 0.0000 0.2500 0.54945(10) 0.0133(3) Uani 1 4 d S . . 
+In2 In 0.0000 0.06797(6) 0.16085(8) 0.0125(3) Uani 1 2 d S . . 
+ 
+loop_ 
+ _atom_site_aniso_label 
+ _atom_site_aniso_U_11 
+ _atom_site_aniso_U_22 
+ _atom_site_aniso_U_33 
+ _atom_site_aniso_U_23 
+ _atom_site_aniso_U_13 
+ _atom_site_aniso_U_12 
+Ba1 0.0095(4) 0.0095(4) 0.0207(6) 0.000 0.000 0.000 
+In2 0.0082(4) 0.0110(3) 0.0184(6) -0.0001(2) 0.000 0.000 
+ 
+_geom_special_details 
+; 
+ All esds (except the esd in the dihedral angle between two l.s. planes) 
+ are estimated using the full covariance matrix.  The cell esds are taken 
+ into account individually in the estimation of esds in distances, angles 
+ and torsion angles; correlations between esds in cell parameters are only 
+ used when they are defined by crystal symmetry.  An approximate (isotropic) 
+ treatment of cell esds is used for estimating esds involving l.s. planes. 
+; 
+ 
+loop_ 
+ _geom_bond_atom_site_label_1 
+ _geom_bond_atom_site_label_2 
+ _geom_bond_distance 
+ _geom_bond_site_symmetry_2 
+ _geom_bond_publ_flag 
+Ba1 In2 3.5242(10) 7_445 ? 
+Ba1 In2 3.5242(10) 13_455 ? 
+Ba1 In2 3.5242(10) 13 ? 
+Ba1 In2 3.5242(10) 7_545 ? 
+Ba1 In2 3.6548(16) . ? 
+Ba1 In2 3.6548(16) 11_565 ? 
+Ba1 In2 3.6611(13) 3_556 ? 
+Ba1 In2 3.6611(13) 9_556 ? 
+Ba1 In2 3.8763(11) 5 ? 
+Ba1 In2 3.8763(11) 15_455 ? 
+Ba1 In2 3.8763(11) 15 ? 
+Ba1 In2 3.8763(11) 5_455 ? 
+Ba1 Ba1 4.3002(18) 13_556 ? 
+Ba1 Ba1 4.3002(18) 13_456 ? 
+Ba1 Ba1 4.3345(16) 9_556 ? 
+Ba1 Ba1 4.3345(16) 9_566 ? 
+Ba1 Ba1 5.2204(19) 1_455 ? 
+Ba1 Ba1 5.2204(19) 1_655 ? 
+Ba1 Ba1 5.731(2) 13_455 ? 
+Ba1 Ba1 5.731(2) 13 ? 
+In2 In2 2.9748(16) 9 ? 
+In2 In2 3.0200(11) 7_545 ? 
+In2 In2 3.0200(11) 7_445 ? 
+In2 In2 3.0958(15) 11_565 ? 
+In2 Ba1 3.5242(10) 13_455 ? 
+In2 Ba1 3.5242(10) 13 ? 
+In2 Ba1 3.6611(13) 9_556 ? 
+In2 Ba1 3.8763(11) 5_444 ? 
+In2 Ba1 3.8763(11) 5_544 ? 
+ 
+loop_ 
+ _geom_angle_atom_site_label_1 
+ _geom_angle_atom_site_label_2 
+ _geom_angle_atom_site_label_3 
+ _geom_angle 
+ _geom_angle_site_symmetry_1 
+ _geom_angle_site_symmetry_3 
+ _geom_angle_publ_flag 
+In2 Ba1 In2 52.11(3) 7_445 13_455 ? 
+In2 Ba1 In2 118.88(4) 7_445 13 ? 
+In2 Ba1 In2 95.58(3) 13_455 13 ? 
+In2 Ba1 In2 95.58(3) 7_445 7_545 ? 
+In2 Ba1 In2 118.88(4) 13_455 7_545 ? 
+In2 Ba1 In2 52.11(3) 13 7_545 ? 
+In2 Ba1 In2 49.714(18) 7_445 . ? 
+In2 Ba1 In2 74.06(2) 13_455 . ? 
+In2 Ba1 In2 74.06(2) 13 . ? 
+In2 Ba1 In2 49.714(18) 7_545 . ? 
+In2 Ba1 In2 74.06(2) 7_445 11_565 ? 
+In2 Ba1 In2 49.714(18) 13_455 11_565 ? 
+In2 Ba1 In2 49.714(18) 13 11_565 ? 
+In2 Ba1 In2 74.06(2) 7_545 11_565 ? 
+In2 Ba1 In2 50.11(3) . 11_565 ? 
+In2 Ba1 In2 131.849(15) 7_445 3_556 ? 
+In2 Ba1 In2 91.05(2) 13_455 3_556 ? 
+In2 Ba1 In2 91.05(2) 13 3_556 ? 
+In2 Ba1 In2 131.849(15) 7_545 3_556 ? 
+In2 Ba1 In2 157.448(19) . 3_556 ? 
+In2 Ba1 In2 107.33(3) 11_565 3_556 ? 
+In2 Ba1 In2 91.05(2) 7_445 9_556 ? 
+In2 Ba1 In2 131.849(15) 13_455 9_556 ? 
+In2 Ba1 In2 131.849(15) 13 9_556 ? 
+In2 Ba1 In2 91.05(2) 7_545 9_556 ? 
+In2 Ba1 In2 107.33(3) . 9_556 ? 
+In2 Ba1 In2 157.448(19) 11_565 9_556 ? 
+In2 Ba1 In2 95.22(4) 3_556 9_556 ? 
+In2 Ba1 In2 158.38(2) 7_445 5 ? 
+In2 Ba1 In2 108.47(3) 13_455 5 ? 
+In2 Ba1 In2 47.11(3) 13 5 ? 
+In2 Ba1 In2 86.11(3) 7_545 5 ? 
+In2 Ba1 In2 121.15(2) . 5 ? 
+In2 Ba1 In2 85.778(19) 11_565 5 ? 
+In2 Ba1 In2 47.134(18) 3_556 5 ? 
+In2 Ba1 In2 110.49(3) 9_556 5 ? 
+In2 Ba1 In2 47.11(3) 7_445 15_455 ? 
+In2 Ba1 In2 86.11(3) 13_455 15_455 ? 
+In2 Ba1 In2 158.38(2) 13 15_455 ? 
+In2 Ba1 In2 108.47(3) 7_545 15_455 ? 
+In2 Ba1 In2 85.778(19) . 15_455 ? 
+In2 Ba1 In2 121.15(2) 11_565 15_455 ? 
+In2 Ba1 In2 110.49(3) 3_556 15_455 ? 
+In2 Ba1 In2 47.134(18) 9_556 15_455 ? 
+In2 Ba1 In2 151.65(3) 5 15_455 ? 
+In2 Ba1 In2 108.47(3) 7_445 15 ? 
+In2 Ba1 In2 158.38(2) 13_455 15 ? 
+In2 Ba1 In2 86.11(3) 13 15 ? 
+In2 Ba1 In2 47.11(3) 7_545 15 ? 
+In2 Ba1 In2 85.778(19) . 15 ? 
+In2 Ba1 In2 121.15(2) 11_565 15 ? 
+In2 Ba1 In2 110.49(3) 3_556 15 ? 
+In2 Ba1 In2 47.134(18) 9_556 15 ? 
+In2 Ba1 In2 88.46(3) 5 15 ? 
+In2 Ba1 In2 84.66(3) 15_455 15 ? 
+In2 Ba1 In2 86.11(3) 7_445 5_455 ? 
+In2 Ba1 In2 47.11(3) 13_455 5_455 ? 
+In2 Ba1 In2 108.47(3) 13 5_455 ? 
+In2 Ba1 In2 158.38(2) 7_545 5_455 ? 
+In2 Ba1 In2 121.15(2) . 5_455 ? 
+In2 Ba1 In2 85.778(19) 11_565 5_455 ? 
+In2 Ba1 In2 47.134(18) 3_556 5_455 ? 
+In2 Ba1 In2 110.49(3) 9_556 5_455 ? 
+In2 Ba1 In2 84.66(3) 5 5_455 ? 
+In2 Ba1 In2 88.46(3) 15_455 5_455 ? 
+In2 Ba1 In2 151.65(3) 15 5_455 ? 
+In2 Ba1 Ba1 148.61(2) 7_445 13_556 ? 
+In2 Ba1 Ba1 148.61(2) 13_455 13_556 ? 
+In2 Ba1 Ba1 87.39(3) 13 13_556 ? 
+In2 Ba1 Ba1 87.39(3) 7_545 13_556 ? 
+In2 Ba1 Ba1 136.047(18) . 13_556 ? 
+In2 Ba1 Ba1 136.047(18) 11_565 13_556 ? 
+In2 Ba1 Ba1 57.60(2) 3_556 13_556 ? 
+In2 Ba1 Ba1 57.60(2) 9_556 13_556 ? 
+In2 Ba1 Ba1 52.891(15) 5 13_556 ? 
+In2 Ba1 Ba1 102.37(3) 15_455 13_556 ? 
+In2 Ba1 Ba1 52.891(15) 15 13_556 ? 
+In2 Ba1 Ba1 102.37(3) 5_455 13_556 ? 
+In2 Ba1 Ba1 87.39(3) 7_445 13_456 ? 
+In2 Ba1 Ba1 87.39(3) 13_455 13_456 ? 
+In2 Ba1 Ba1 148.61(2) 13 13_456 ? 
+In2 Ba1 Ba1 148.61(2) 7_545 13_456 ? 
+In2 Ba1 Ba1 136.047(18) . 13_456 ? 
+In2 Ba1 Ba1 136.047(18) 11_565 13_456 ? 
+In2 Ba1 Ba1 57.60(2) 3_556 13_456 ? 
+In2 Ba1 Ba1 57.60(2) 9_556 13_456 ? 
+In2 Ba1 Ba1 102.37(3) 5 13_456 ? 
+In2 Ba1 Ba1 52.891(15) 15_455 13_456 ? 
+In2 Ba1 Ba1 102.37(3) 15 13_456 ? 
+In2 Ba1 Ba1 52.891(15) 5_455 13_456 ? 
+Ba1 Ba1 Ba1 74.75(4) 13_556 13_456 ? 
+In2 Ba1 Ba1 58.016(15) 7_445 9_556 ? 
+In2 Ba1 Ba1 109.39(2) 13_455 9_556 ? 
+In2 Ba1 Ba1 109.39(2) 13 9_556 ? 
+In2 Ba1 Ba1 58.016(15) 7_545 9_556 ? 
+In2 Ba1 Ba1 53.733(19) . 9_556 ? 
+In2 Ba1 Ba1 103.85(3) 11_565 9_556 ? 
+In2 Ba1 Ba1 148.82(3) 3_556 9_556 ? 
+In2 Ba1 Ba1 53.60(3) 9_556 9_556 ? 
+In2 Ba1 Ba1 137.042(15) 5 9_556 ? 
+In2 Ba1 Ba1 50.457(18) 15_455 9_556 ? 
+In2 Ba1 Ba1 50.457(18) 15 9_556 ? 
+In2 Ba1 Ba1 137.042(15) 5_455 9_556 ? 
+Ba1 Ba1 Ba1 98.887(16) 13_556 9_556 ? 
+Ba1 Ba1 Ba1 98.887(16) 13_456 9_556 ? 
+In2 Ba1 Ba1 109.39(2) 7_445 9_566 ? 
+In2 Ba1 Ba1 58.016(15) 13_455 9_566 ? 
+In2 Ba1 Ba1 58.016(15) 13 9_566 ? 
+In2 Ba1 Ba1 109.39(2) 7_545 9_566 ? 
+In2 Ba1 Ba1 103.85(3) . 9_566 ? 
+In2 Ba1 Ba1 53.733(19) 11_565 9_566 ? 
+In2 Ba1 Ba1 53.60(3) 3_556 9_566 ? 
+In2 Ba1 Ba1 148.82(3) 9_556 9_566 ? 
+In2 Ba1 Ba1 50.457(18) 5 9_566 ? 
+In2 Ba1 Ba1 137.042(15) 15_455 9_566 ? 
+In2 Ba1 Ba1 137.042(15) 15 9_566 ? 
+In2 Ba1 Ba1 50.457(17) 5_455 9_566 ? 
+Ba1 Ba1 Ba1 98.887(16) 13_556 9_566 ? 
+Ba1 Ba1 Ba1 98.887(16) 13_456 9_566 ? 
+Ba1 Ba1 Ba1 157.58(4) 9_556 9_566 ? 
+In2 Ba1 Ba1 42.212(17) 7_445 1_455 ? 
+In2 Ba1 Ba1 42.212(17) 13_455 1_455 ? 
+In2 Ba1 Ba1 137.788(17) 13 1_455 ? 
+In2 Ba1 Ba1 137.788(17) 7_545 1_455 ? 
+In2 Ba1 Ba1 90.0 . 1_455 ? 
+In2 Ba1 Ba1 90.0 11_565 1_455 ? 
+In2 Ba1 Ba1 90.0 3_556 1_455 ? 
+In2 Ba1 Ba1 90.0 9_556 1_455 ? 
+In2 Ba1 Ba1 132.329(15) 5 1_455 ? 
+In2 Ba1 Ba1 47.671(15) 15_455 1_455 ? 
+In2 Ba1 Ba1 132.329(15) 15 1_455 ? 
+In2 Ba1 Ba1 47.671(15) 5_455 1_455 ? 
+Ba1 Ba1 Ba1 127.37(2) 13_556 1_455 ? 
+Ba1 Ba1 Ba1 52.63(2) 13_456 1_455 ? 
+Ba1 Ba1 Ba1 90.0 9_556 1_455 ? 
+Ba1 Ba1 Ba1 90.0 9_566 1_455 ? 
+In2 Ba1 Ba1 137.788(17) 7_445 1_655 ? 
+In2 Ba1 Ba1 137.788(17) 13_455 1_655 ? 
+In2 Ba1 Ba1 42.212(17) 13 1_655 ? 
+In2 Ba1 Ba1 42.212(17) 7_545 1_655 ? 
+In2 Ba1 Ba1 90.0 . 1_655 ? 
+In2 Ba1 Ba1 90.0 11_565 1_655 ? 
+In2 Ba1 Ba1 90.0 3_556 1_655 ? 
+In2 Ba1 Ba1 90.0 9_556 1_655 ? 
+In2 Ba1 Ba1 47.671(15) 5 1_655 ? 
+In2 Ba1 Ba1 132.329(15) 15_455 1_655 ? 
+In2 Ba1 Ba1 47.671(15) 15 1_655 ? 
+In2 Ba1 Ba1 132.329(15) 5_455 1_655 ? 
+Ba1 Ba1 Ba1 52.63(2) 13_556 1_655 ? 
+Ba1 Ba1 Ba1 127.37(2) 13_456 1_655 ? 
+Ba1 Ba1 Ba1 90.0 9_556 1_655 ? 
+Ba1 Ba1 Ba1 90.0 9_566 1_655 ? 
+Ba1 Ba1 Ba1 180.00(4) 1_455 1_655 ? 
+In2 Ba1 Ba1 37.819(13) 7_445 13_455 ? 
+In2 Ba1 Ba1 37.819(13) 13_455 13_455 ? 
+In2 Ba1 Ba1 83.38(3) 13 13_455 ? 
+In2 Ba1 Ba1 83.38(3) 7_545 13_455 ? 
+In2 Ba1 Ba1 36.246(17) . 13_455 ? 
+In2 Ba1 Ba1 36.246(17) 11_565 13_455 ? 
+In2 Ba1 Ba1 126.885(18) 3_556 13_455 ? 
+In2 Ba1 Ba1 126.885(18) 9_556 13_455 ? 
+In2 Ba1 Ba1 121.65(2) 5 13_455 ? 
+In2 Ba1 Ba1 84.91(2) 15_455 13_455 ? 
+In2 Ba1 Ba1 121.65(2) 15 13_455 ? 
+In2 Ba1 Ba1 84.91(2) 5_455 13_455 ? 
+Ba1 Ba1 Ba1 169.72(2) 13_556 13_455 ? 
+Ba1 Ba1 Ba1 115.54(3) 13_456 13_455 ? 
+Ba1 Ba1 Ba1 80.03(2) 9_556 13_455 ? 
+Ba1 Ba1 Ba1 80.03(2) 9_566 13_455 ? 
+Ba1 Ba1 Ba1 62.908(15) 1_455 13_455 ? 
+Ba1 Ba1 Ba1 117.092(15) 1_655 13_455 ? 
+In2 Ba1 Ba1 83.38(3) 7_445 13 ? 
+In2 Ba1 Ba1 83.38(3) 13_455 13 ? 
+In2 Ba1 Ba1 37.819(13) 13 13 ? 
+In2 Ba1 Ba1 37.819(13) 7_545 13 ? 
+In2 Ba1 Ba1 36.246(17) . 13 ? 
+In2 Ba1 Ba1 36.246(17) 11_565 13 ? 
+In2 Ba1 Ba1 126.885(18) 3_556 13 ? 
+In2 Ba1 Ba1 126.885(18) 9_556 13 ? 
+In2 Ba1 Ba1 84.91(2) 5 13 ? 
+In2 Ba1 Ba1 121.65(2) 15_455 13 ? 
+In2 Ba1 Ba1 84.91(2) 15 13 ? 
+In2 Ba1 Ba1 121.65(2) 5_455 13 ? 
+Ba1 Ba1 Ba1 115.54(3) 13_556 13 ? 
+Ba1 Ba1 Ba1 169.72(2) 13_456 13 ? 
+Ba1 Ba1 Ba1 80.03(2) 9_556 13 ? 
+Ba1 Ba1 Ba1 80.03(2) 9_566 13 ? 
+Ba1 Ba1 Ba1 117.092(15) 1_455 13 ? 
+Ba1 Ba1 Ba1 62.908(14) 1_655 13 ? 
+Ba1 Ba1 Ba1 54.18(3) 13_455 13 ? 
+In2 In2 In2 117.61(2) 9 7_545 ? 
+In2 In2 In2 117.61(2) 9 7_445 ? 
+In2 In2 In2 119.60(5) 7_545 7_445 ? 
+In2 In2 In2 112.87(2) 9 11_565 ? 
+In2 In2 In2 90.0 7_545 11_565 ? 
+In2 In2 In2 90.0 7_445 11_565 ? 
+In2 In2 Ba1 72.68(3) 9 13_455 ? 
+In2 In2 Ba1 153.622(13) 7_545 13_455 ? 
+In2 In2 Ba1 67.39(3) 7_445 13_455 ? 
+In2 In2 Ba1 63.945(13) 11_565 13_455 ? 
+In2 In2 Ba1 72.68(3) 9 13 ? 
+In2 In2 Ba1 67.39(3) 7_545 13 ? 
+In2 In2 Ba1 153.622(12) 7_445 13 ? 
+In2 In2 Ba1 63.945(13) 11_565 13 ? 
+Ba1 In2 Ba1 95.58(3) 13_455 13 ? 
+In2 In2 Ba1 177.81(3) 9 . ? 
+In2 In2 Ba1 62.89(2) 7_545 . ? 
+In2 In2 Ba1 62.89(2) 7_445 . ? 
+In2 In2 Ba1 64.943(15) 11_565 . ? 
+Ba1 In2 Ba1 105.94(2) 13_455 . ? 
+Ba1 In2 Ba1 105.94(2) 13 . ? 
+In2 In2 Ba1 109.52(4) 9 9_556 ? 
+In2 In2 Ba1 70.18(2) 7_545 9_556 ? 
+In2 In2 Ba1 70.18(2) 7_445 9_556 ? 
+In2 In2 Ba1 137.61(2) 11_565 9_556 ? 
+Ba1 In2 Ba1 131.849(15) 13_455 9_556 ? 
+Ba1 In2 Ba1 131.849(15) 13 9_556 ? 
+Ba1 In2 Ba1 72.67(3) . 9_556 ? 
+In2 In2 Ba1 60.218(18) 9 5_444 ? 
+In2 In2 Ba1 134.843(18) 7_545 5_444 ? 
+In2 In2 Ba1 62.69(2) 7_445 5_444 ? 
+In2 In2 Ba1 134.232(15) 11_565 5_444 ? 
+Ba1 In2 Ba1 71.53(3) 13_455 5_444 ? 
+Ba1 In2 Ba1 132.89(3) 13 5_444 ? 
+Ba1 In2 Ba1 121.15(2) . 5_444 ? 
+Ba1 In2 Ba1 69.51(3) 9_556 5_444 ? 
+In2 In2 Ba1 60.218(18) 9 5_544 ? 
+In2 In2 Ba1 62.69(2) 7_545 5_544 ? 
+In2 In2 Ba1 134.843(18) 7_445 5_544 ? 
+In2 In2 Ba1 134.232(15) 11_565 5_544 ? 
+Ba1 In2 Ba1 132.89(3) 13_455 5_544 ? 
+Ba1 In2 Ba1 71.53(3) 13 5_544 ? 
+Ba1 In2 Ba1 121.15(2) . 5_544 ? 
+Ba1 In2 Ba1 69.51(3) 9_556 5_544 ? 
+Ba1 In2 Ba1 84.66(3) 5_444 5_544 ? 
+ 
+_diffrn_measured_fraction_theta_max    0.826 
+_diffrn_reflns_theta_full              28.61 
+_diffrn_measured_fraction_theta_full   0.826 
+_refine_diff_density_max    1.673 
+_refine_diff_density_min   -1.357 
+_refine_diff_density_rms    0.356 

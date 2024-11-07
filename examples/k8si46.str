@@ -1,0 +1,25 @@
+title K8Si46-Typ
+rem Lit: Gallmeier, Sch"afer, Weiss: Z. Naturforsch. {22b}, 1080 (1967)
+rem K coordination polyhedra
+rem = clathrate-I-type
+cell   12.05 12.05 12.05 90. 90. 90.
+magnification   0.80
+spgp P m 3 n
+polytolerance  10.00
+edges   0.03 Gray30
+atom sn  1 0      0.3180   0.1189
+atom sn  2 0.1828  0.1828 0.1828
+atom sn  3  0.25  0.0 0.5
+atom k   1  0  0  0
+atom K   2 0.25  0.5  0
+vrml97
+axislines   0.00 White
+box  0.020 Black
+background White
+finish   0.00   0.00   0.00   0.00
+view   15.2  -75.9  -14.5
+polyvert k sn  4.800 Blue
+polyvert K sn  5.000 Red
+pack  -0.25   1.25  -0.25   1.25  -0.25   1.25
+end
+

@@ -1,0 +1,15 @@
+titl imported
+import cif imma.cif
+mapread fcf imma.fcf
+box  0.020 Black
+background White
+ellipsoids   0.50
+axislines   0.00 White
+finish   0.00   0.00   0.00   0.00
+view  -74.0   36.4    7.9
+pack  -0.05   1.05  -0.05   1.05  -0.05   1.05
+ellipcolor Ba   1 Red
+ellipcolor In   2 Green
+mapcontour  15.000 mesh Blue
+end
+

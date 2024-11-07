@@ -1,0 +1,21 @@
+Author: Daniel Leidert <daniel.leidert@wgdd.de>
+Description: Fix default location colors.inc
+ * CrystalView.cxx (LoadConfig): Fix the default location for the
+   colors.inc and the povray executable on Debian systems. However
+   povray has been removed from Debian.
+Forwarded: yes
+Bug-Debian: https://bugs.debian.org/853837
+
+--- a/source/DRAWxtl55/CrystalView.cxx
++++ b/source/DRAWxtl55/CrystalView.cxx
+@@ -1434,8 +1434,8 @@
+ 	strcpy (drvui->POV_Include, "/sw/share/povray-3.5/include/colors.inc");
+ 	strcpy (drvui->POV_Path, "/sw/bin/povray");
+ #else
+-	strcpy (drvui->POV_Include, "/usr/local/share/povray-3.5/include/colors.inc");
+-	strcpy (drvui->POV_Path, "/usr/local/bin/povray");
++	strcpy (drvui->POV_Include, "/usr/share/povray-3.7/include/colors.inc");
++	strcpy (drvui->POV_Path, "/usr/bin/povray");
+ #endif
+ #endif
+     } else {

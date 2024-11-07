@@ -1,0 +1,18 @@
+title CaTiSiO5
+import cif cif_test.cif
+xyzoff 0 .25 .25
+rem bounds 5 5 4
+edges   0.05 Black
+box  0.020 Black
+vrml97
+axislines   0.08 White
+background White
+finish   0.00   0.00   0.00   0.00
+view   20.2  -41.5  -12.8
+phong   0.40  25.00
+sphere Ca    0.500 Yellow
+polysz Si  1.700 Red
+polysz Ti  2.200 Blue
+pack  -0.10   1.10  -0.10   1.10  -0.10   1.00
+end
+

@@ -1,0 +1,47 @@
+titl imported
+inline shelx
+TITL  BaIn4, IPDS-Messung Okt. 2003
+CELL   0.7107   4.970   4.970  11.983   90.0   90. 90.
+ZERR      2    0.003 0.003 0.003 0 0 0
+LATT 2
+SYMM   -X,  -Y,   Z
+SYMM   -X,   Y,   Z
+SYMM    X,  -Y,   Z
+SYMM   -Y,   X,   Z
+SYMM    Y,  -X,   Z
+SYMM    Y,   X,   Z
+SYMM   -Y,  -X,   Z
+SFAC BA IN
+UNIT 2 8
+OMIT 0
+L.S. 20
+LIST 3
+acta
+WGHT    0.026700    2.255900
+EXTI    0.017088
+FVAR       0.37966
+BA1   1    0.000000    0.000000    0.000000    10.06250    0.01720    0.01720 =
+         0.02296    0.00000    0.00000    0.00000
+IN1   2    0.000000    0.000000    0.616722    10.12500    0.02147    0.02147 =
+         0.01718    0.00000    0.00000    0.00000
+IN2   2    0.000000    0.500000    0.750000    10.12500    0.01922    0.01922 =
+         0.02047    0.00000    0.00000    0.00000
+HKLF 4 1
+box  0.020 Black
+background White
+axislines   0.00 White
+finish   0.00   0.00   0.00   0.00
+ellipsoids   0.50
+sphere IN   1  0.400 Green
+sphere IN   2  0.400 Green
+labeltext -0.101 -0.101 -0.042 o
+labeltext  1.101  0.000  0.000 a
+labeltext  0.000  1.101  0.000 b
+labeltext  0.000  0.000  1.042 c
+pack  -0.05   1.05  -0.05   1.05  -0.05   1.05
+mapregion 0.0000 1.0000 0.0000 1.0000 0.0000 1.0000
+mapslice 0.500 0.500 0.500  0.000 1.000 0.000  2
+view  -88.8    3.7  177.2
+mapcontour  1.000 mesh Blue
+mapread fcf i4zmmm_list6.fcf Fo 10
+end

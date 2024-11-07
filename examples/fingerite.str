@@ -1,0 +1,37 @@
+title fingerite
+cell 8.1578 8.269 8.044 107.14 91.39 106.44
+spgp P -1
+atom Cu 1 0 0 0
+atom Cu 2 .8410 .1455 .7221
+atom Cu 3 .7046 .3372 .5008
+atom CU 4 .5807 .5078 .2771
+atom Cu 5 .7845 .2522 .1266
+atom CU 6 .3711 .1460 .1485
+atom V  1 .9025 .7537 .5675
+atom V  2 .1871 .4376 .0781
+atom V  3 .5887 .9348 .2667
+atom O  1 .7055 .5757 .5131
+atom O  2 .7876 .4785 .0891
+atom O  3 .3628 .3700 .1138
+atom O  4 .8183 .3911 .7404
+atom O  5 .9997 .2491 .0200
+atom O  6 .9502 .3256 .3768
+atom O  7 .3804 .9268 .1814
+atom O  8 .7287 .9907 .1150
+atom O  9 .1243 .0730 .2405
+atom O 10 .4024 .7224 .7369
+atom O 11 .3323 .9133 .5331
+atom O 12 .4286 .2645 .7179
+atom O 13 .9546 .8185 .3937
+axislines   0.08 White
+box  0.020 Black
+background White
+finish   0.00   0.00   0.00   0.00
+edges   0.03 Black
+view -139.1    2.7  152.5
+polyvert V O  1.900 Blue
+polyvert Cu O  3.200 Yellow
+polyvert CU O  2.320 Red
+pack  -0.20   1.20  -0.20   1.20  -0.20   1.20
+end
+

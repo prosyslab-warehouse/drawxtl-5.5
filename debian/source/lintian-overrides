@@ -1,0 +1,4 @@
+# there is no HTTPS resource
+drawxtl source: debian-watch-uses-insecure-uri http://www.lwfinger.com/drawxtl/download.html
+# there are no signed sources
+drawxtl source: debian-watch-does-not-check-gpg-signature

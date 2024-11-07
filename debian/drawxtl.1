@@ -1,0 +1,86 @@
+.TH "DRAWXTL" "1" "2009/09/27" "drawxtl" "DRAWxtl User Manual"
+
+.SH "NAME"
+drawxtl \- display crystal structures on ordinary computer hardware
+
+.SH "SYNOPSIS"
+.B drawxtl
+.RI [ filename ]
+
+.SH "DESCRIPTION"
+.B drawxtl
+reads a basic description of the crystal structure, which includes unit-cell
+parameters, space group, atomic coordinates, thermal parameters or a Fourier
+map, and outputs a geometry object that contains polyhedra, planes, lone-pair
+cones, spheres or ellipsoids, bonds, iso-surface Fourier contours and the
+unit-cell boundary.
+.PP
+Four forms of graphics are produced:
+.IP \(bu 4
+an OpenGL window for immediate viewing
+.IP \(bu 4
+the Persistence of Vision Ray Tracer (POV-RAY) scene language for
+publication-quality drawings
+.IP \(bu 4
+the Virtual Reality Modeling Language (VRML) for dissemination across the
+Internet
+.IP \(bu 4
+Postscript rendering of the OpenGL window for those who want high-quality
+output but do not have POV-RAY installed
+
+.SH "OPTIONS"
+There are no command line options to use.
+
+.SH "FILES"
+.TP
+.I ~/\.drawxtlrc
+Per user configuration file.
+.PP
+A short tutorial about this file and configuring \fBdrawxtl\fP is available
+online at \fI\%http://home.att.net/~larry.finger/drawxtl/configure.htm\fP.
+
+.SH "BUGS"
+When opening a structures (\fI.str\fP) file, \fBdrawxtl\fP needs write
+permissions in the directory the file is located in. Otherwise it will
+return an error ("\fBCannot open structures files.\fP").
+
+.SH "SEE ALSO"
+A FAQ and a manual are available online in PDF and HTML format at the
+\fBDRAWxtl\fP homepage at \fI\%http://home.att.net/~larry.finger/drawxtl/\fP.
+
+.SH "CITATION"
+Please cite \fBDRAWxtl\fP as follows:
+.IP
+Larry W. Finger, Martin Kroeker, and Brian H. Toby, DRAWxtl, an open-source
+computer program to produce crystal-structure drawings, J. Applied
+Crystallography V40, pp. 188-192, 2007.
+.PP
+An electronic reprint is available online at
+\fI\%http://home.att.net/~larry.finger/drawxtl/DRAWxtl_JAC.pdf\fP.
+
+.SH "AUTHORS"
+.TP
+\fBLarry Finger\fP <\&larry\.finger@lwfinger\.net\&>
+Author of the program and the former version called \(lqcrystal\(rq.
+.TP
+\fBMartin Kroeker\fP <\&martin@ruby\.chemie\.uni\-freiburg\.de\&>
+Author of the original POV and VRML modifications.
+.TP
+\fBBrian Toby\fP <\&brian\.toby@anl\.gov\&>
+Author of the Fourier-contour code.
+.TP
+\fBDaniel Leidert\fP <\&daniel\.leidert@wgdd\.de\&>
+Manpage author for the Debian system.
+
+.SH "COPYRIGHT"
+Copyright \(co 2007-2009 Daniel Leidert
+.PP
+This manual page was written for the Debian system (but may be used by
+others).
+.PP
+Permission is granted to copy, distribute and/or modify this document under
+the terms of the GNU General Public License, Version 2 or (at your option) any
+later version published by the Free Software Foundation.
+.PP
+On Debian systems, the complete text of the GNU General Public License can be
+found in \fI/usr/share/common\-licenses/GPL\fP.

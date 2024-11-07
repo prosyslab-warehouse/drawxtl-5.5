@@ -1,0 +1,443 @@
+
+#=======================================================================
+data_global
+#=======================================================================
+
+_audit_creation_method                   'Jana2000 Version : 25/06/2004'
+
+
+# 1. PROCESSING SUMMARY (IUCr Office Use Only)
+
+_journal_date_recd_electronic            ?
+_journal_date_to_coeditor                ?
+_journal_date_from_coeditor              ?
+_journal_date_accepted                   ?
+_journal_date_printers_first             ?
+_journal_date_printers_final             ?
+_journal_date_proofs_out                 ?
+_journal_date_proofs_in                  ?
+_journal_coeditor_name                   ?
+_journal_coeditor_code                   ?
+_journal_coeditor_notes                 
+; ?
+;
+_journal_techeditor_code                 ?
+_journal_paper_category                  ?
+_journal_techeditor_notes               
+; ?
+;
+_journal_coden_ASTM                      ?
+_journal_name_full                       'Acta Crystallographica Section C'
+_journal_year                            ?
+_journal_volume                          ?
+_journal_issue                           ?
+_journal_page_first                      ?
+_journal_page_last                       ?
+_journal_suppl_publ_number               ?
+_journal_suppl_publ_pages                ?
+
+#=======================================================================
+
+# 2. SUBMISSION DETAILS
+
+_publ_contact_author_name                ?
+_publ_contact_author_address            
+; ?
+;
+_publ_contact_author_email               ?
+_publ_contact_author_fax                 ?
+_publ_contact_author_phone               ?
+
+_publ_requested_journal                  'Acta Crystallographica Section C'
+_publ_requested_category                 ?
+
+_publ_contact_letter                    
+; ?
+;
+
+#=======================================================================
+
+# 3. TITLE AND AUTHOR LIST
+
+_publ_section_title                     
+; ?
+;
+_publ_section_title_footnote            
+; ?
+;
+loop_
+ _publ_author_name                                           
+ _publ_author_footnote                                       
+ _publ_author_address                                        
+ ?       # name 
+; ?      # footnote
+;
+; ?      # address
+;
+
+#=======================================================================
+
+# 4. TEXT
+
+_publ_section_synopsis                  
+; ?
+;
+_publ_section_abstract                  
+; ?
+;
+_publ_section_comment                   
+; ?
+;
+_publ_section_introduction              
+; ?
+;
+_publ_section_experimental              
+; ?
+;
+_publ_section_exptl_prep                
+; ?
+;
+_publ_section_exptl_refinement          
+; ?
+;
+_publ_section_exptl_solution            
+; ?
+;
+_publ_section_discussion                
+; ?
+;
+_publ_section_acknowledgements          
+; ?
+;
+_publ_section_references                
+;
+Petricek, V. & Dusek, M. (2000). Jana2000. Structure Determination
+Software Programs. Institute of Physics, Praha, Czech Republic.
+ 
+# use this reference if Diamond ver. 2 was used for visualization
+Brandenburg, K. (1999). DIAMOND. Version. 2.1c.
+Crystal Impact GbR, Bonn, Germany.
+
+# use this reference if Diamond ver. 3 was used for visualization
+in preparation
+
+# use this reference if SIR97 was used for solving of the structure
+Altomare, A., Burla, M. C., Camalli, M., Cascarano, G., Giacovazzo, C.,
+Guagliardi, A., Moliterni, A. G. G., Polidori, G., Spagna, R. (1997).
+SIR97. A Package for Crystal Structure Solution by Direct Methods
+and Refinement, Bari, Rome, Italy.
+
+# use this reference if bond valences were calculated
+Brown, I. D. (1996). J. Appl. Cryst. 29, 479-480.
+
+# use this reference if Xshape wase used for crystal shape refinement
+Stoe & Cie (1998). X-SHAPE. Stoe & Cie, Darmstadt, Germany.
+;
+_publ_section_figure_captions           
+; ?
+;
+_publ_section_table_legends             
+; ?
+;
+
+#=======================================================================
+data_(I)
+#=======================================================================
+
+# 5. CHEMICAL DATA
+
+_chemical_name_systematic               
+; ?
+;
+_chemical_name_common                    ?
+_chemical_formula_moiety                 ?
+_chemical_formula_structural             ?
+_chemical_formula_analytical             ?
+_chemical_formula_iupac                  ?
+_chemical_formula_sum                    'Ce1 Si2'
+_chemical_formula_weight                 196.3          
+_chemical_melting_point                  ?
+_chemical_compound_source                ?
+
+#=======================================================================
+
+# 6. CRYSTAL DATA
+
+_symmetry_cell_setting                   monoclinic
+_space_group_ssg_name                    'I2/b(\a\b0)00'
+loop_
+ _space_group_symop_ssg_id                                   
+ _space_group_symop_ssg_operation_algebraic                  
+ 1   x1,x2,x3,x4
+ 2   -x1,1/2-x2,x3,-x4
+ 3   -x1,-x2,-x3,-x4
+ 4   x1,1/2+x2,-x3,x4
+ 5   1/2+x1,1/2+x2,1/2+x3,x4
+ 6   1/2-x1,-x2,1/2+x3,-x4
+ 7   1/2-x1,1/2-x2,1/2-x3,-x4
+ 8   1/2+x1,x2,1/2-x3,x4
+_cell_length_a                           4.1802(5)      
+_cell_length_b                           4.1859(4)      
+_cell_length_c                           13.8501(14)    
+_cell_angle_alpha                        90             
+_cell_angle_beta                         90             
+_cell_angle_gamma                        90             
+_cell_volume                             242.35(4)      
+_cell_modulation_dimension               1              
+loop_
+ _cell_wave_vector_seq_id                                    
+ _cell_wave_vector_x                                         
+ _cell_wave_vector_y                                         
+ _cell_wave_vector_z                                         
+ 1   0.20100   0.61000   0.00000
+_cell_formula_units_Z                    4
+
+_cell_measurement_reflns_used            ?
+_cell_measurement_theta_min              ?
+_cell_measurement_theta_max              ?
+_cell_measurement_temperature            ?
+_cell_special_details                   
+; ?
+;
+
+_exptl_crystal_density_diffrn            5.3781(10)     
+_exptl_crystal_density_meas              ?              
+_exptl_crystal_density_method            ?              
+_exptl_crystal_F_000                     ?              
+
+_exptl_absorpt_coefficient_mu            19.344         
+_exptl_crystal_description               ?
+_exptl_crystal_size_max                  ?
+_exptl_crystal_size_mid                  ?
+_exptl_crystal_size_min                  ?
+_exptl_crystal_size_rad                  ?
+_exptl_crystal_colour                    ?
+_exptl_absorpt_correction_type           None
+_exptl_absorpt_process_details           ?
+_exptl_absorpt_correction_T_min          1.000          
+_exptl_absorpt_correction_T_max          1.000          
+
+#=======================================================================
+
+# 7. EXPERIMENTAL DATA
+
+_exptl_special_details                  
+; ?
+;
+
+_diffrn_ambient_temperature              ?
+_diffrn_radiation_type                   'Mo K\a'
+_diffrn_radiation_wavelength             0.71069
+_diffrn_radiation_source                 ?
+_diffrn_radiation_monochromator          ?
+_diffrn_measurement_device_type          ?
+_diffrn_detector_area_resol_mean         ?
+_diffrn_measurement_method               ?
+
+_diffrn_reflns_number                    ?              
+_diffrn_reflns_theta_min                 ?              
+_diffrn_reflns_theta_max                 ?              
+_diffrn_reflns_theta_full                ?              
+_diffrn_measured_fraction_theta_max      ?
+_diffrn_measured_fraction_theta_full     ?              
+_diffrn_reflns_av_R_equivalents          ?              
+_diffrn_reflns_av_sigmaI/netI            ?              
+_diffrn_reflns_limit_h_min               ?              
+_diffrn_reflns_limit_h_max               ?              
+_diffrn_reflns_limit_k_min               ?              
+_diffrn_reflns_limit_k_max               ?              
+_diffrn_reflns_limit_l_min               ?              
+_diffrn_reflns_limit_l_max               ?              
+_diffrn_reflns_limit_index_m_1_min       ?              
+_diffrn_reflns_limit_index_m_1_max       ?              
+_diffrn_reflns_reduction_process         ?
+
+_diffrn_standards_number                 ?              
+_diffrn_standards_interval_count         ?              
+_diffrn_standards_interval_time          ?              
+_diffrn_standards_decay_%                ?
+
+#=======================================================================
+
+# 8. REFINEMENT DATA
+
+_refine_special_details                 
+; ?
+;
+
+_reflns_number_total                     ?              
+_reflns_number_gt                        ?              
+_reflns_threshold_expression             ?              
+
+_refine_ls_structure_factor_coef         ?              
+_refine_ls_R_factor_gt                   ?              
+_refine_ls_wR_factor_gt                  ?              
+_refine_ls_R_factor_all                  ?              
+_refine_ls_wR_factor_ref                 ?              
+_refine_ls_goodness_of_fit_ref           ?              
+_refine_ls_goodness_of_fit_gt            ?              
+_refine_ls_restrained_S_gt               ?
+_refine_ls_restrained_S_all              ?
+_refine_ls_number_reflns                 ?              
+_refine_ls_number_parameters             ?              
+_refine_ls_number_restraints             ?
+_refine_ls_number_constraints            ?
+_refine_ls_weighting_scheme              ?              
+_refine_ls_weighting_details             ?
+_refine_ls_hydrogen_treatment            ?
+_refine_ls_shift/su_max                  ?              
+_refine_ls_shift/su_mean                 ?              
+_refine_diff_density_max                 ?              
+_refine_diff_density_min                 ?              
+_refine_ls_extinction_method             ?
+_refine_ls_extinction_coef               ?
+
+loop_
+ _atom_type_symbol                                           
+ _atom_type_scat_dispersion_real                             
+ _atom_type_scat_dispersion_imag                             
+ _atom_type_scat_source                                      
+ _atom_type_scat_Cromer_Mann_a1                              
+ _atom_type_scat_Cromer_Mann_b1                              
+ _atom_type_scat_Cromer_Mann_a2                              
+ _atom_type_scat_Cromer_Mann_b2                              
+ _atom_type_scat_Cromer_Mann_a3                              
+ _atom_type_scat_Cromer_Mann_b3                              
+ _atom_type_scat_Cromer_Mann_a4                              
+ _atom_type_scat_Cromer_Mann_b4                              
+ _atom_type_scat_Cromer_Mann_c                               
+ Ce  -0.249   2.633
+ 'International Tables Vol C Tables  4.2.6.8 and 6.1.1.4'
+21.167101 2.81219 19.769501 0.226836 11.8513 17.608299 3.33049 127.112999 1.8626
+ Si   0.082   0.070
+ 'International Tables Vol C Tables  4.2.6.8 and 6.1.1.4'
+6.2915 2.4386 3.0353 32.333698 1.9891 0.6785 1.541 81.693703 1.1407             
+
+_computing_data_collection               ?
+_computing_cell_refinement               ?
+_computing_data_reduction                ?
+_computing_structure_solution            ?
+_computing_structure_refinement         
+ '(Jana2000; Petricek and Dusek, 2000)'
+_computing_molecular_graphics            ?
+_computing_publication_material         
+ '(Jana2000; Petricek and Dusek, 2000)'
+
+#=======================================================================
+
+# 9. ATOMIC COORDINATES AND DISPLACEMENT PARAMETERS
+
+loop_
+ _atom_site_label                                            
+ _atom_site_type_symbol                                      
+ _atom_site_fract_x                                          
+ _atom_site_fract_y                                          
+ _atom_site_fract_z                                          
+ _atom_site_adp_type                                         
+ _atom_site_U_iso_or_equiv                                   
+ _atom_site_symmetry_multiplicity                            
+ _atom_site_occupancy                                        
+ _atom_site_calc_flag                                        
+ _atom_site_refinement_flags                                 
+ _atom_site_disorder_assembly                                
+ _atom_site_disorder_group                                   
+  Ce1 Ce 0 0.25 0.12556(4) Uani 0.0028(2) 4 1 d . . .
+  Si1 Si 0 0.25 0.5387(6) Uani 0.0099(9) 4 1 d . . .
+  Si2 Si 0 0.25 0.7060(3) Uani 0.0107(7) 4 1 d . . .
+
+loop_
+ _atom_site_aniso_label                                      
+ _atom_site_aniso_type_symbol                                
+ _atom_site_aniso_U_11                                       
+ _atom_site_aniso_U_22                                       
+ _atom_site_aniso_U_33                                       
+ _atom_site_aniso_U_12                                       
+ _atom_site_aniso_U_13                                       
+ _atom_site_aniso_U_23                                       
+ Ce1 Ce 0.0027(3) 0.0027(3) 0.0031(3) -0.00020(16) 0 0
+ Si1 Si 0.0155(18) 0.0048(13) 0.0094(18) -0.0051(10) 0 0
+ Si2 Si 0.0102(11) 0.0079(11) 0.0139(13) -0.0009(8) 0 0
+
+
+loop_
+ _atom_site_Fourier_wave_vector_seq_id                       
+ _atom_site_Fourier_wave_vector_x                            
+ _atom_site_Fourier_wave_vector_y                            
+ _atom_site_Fourier_wave_vector_z                            
+ 1   0.20100   0.61000   0.00000
+ 2   0.40200   1.22000   0.00000
+
+
+loop_
+ _atom_site_occ_Fourier_atom_site_label                      
+ _atom_site_occ_Fourier_wave_vector_seq_id                   
+ _atom_site_occ_Fourier_param_cos                            
+ _atom_site_occ_Fourier_param_sin                            
+ Si1    1   1                   0
+
+
+loop_
+ _atom_site_occ_special_func_atom_site_label                 
+ _atom_site_occ_special_func_crenel_c                        
+ _atom_site_occ_special_func_crenel_w                        
+ Si1  0  1.438(3)
+
+
+loop_
+ _atom_site_displace_Fourier_atom_site_label                 
+ _atom_site_displace_Fourier_axis                            
+ _atom_site_displace_Fourier_wave_vector_seq_id              
+ _atom_site_displace_Fourier_param_cos                       
+ _atom_site_displace_Fourier_param_sin                       
+ Ce1  x  1     0                0.00395(16)
+ Ce1  y  1     0               -0.0010(2)
+ Ce1  z  1     0.00005(7)       0
+ Si1  x  1     0               -0.0051(7)
+ Si1  y  1     0               -0.0260(7)
+ Si1  z  1     0.0004(7)        0
+ Si1  x  2     0               -0.0006(11)
+ Si1  y  2     0                0.0116(11)
+ Si1  z  2     0.0004(9)        0
+ Si2  x  1     0               -0.0083(10)
+ Si2  y  1     0                0.0021(12)
+ Si2  z  1     0.0034(4)        0
+
+
+loop_
+ _atom_site_U_Fourier_atom_site_label                        
+ _atom_site_U_Fourier_tens_elem                              
+ _atom_site_U_Fourier_wave_vector_seq_id                     
+ _atom_site_U_Fourier_param_cos                              
+ _atom_site_U_Fourier_param_sin                              
+ Ce1  U11  1     0.0003(2)      0
+ Ce1  U22  1    -0.0002(3)      0
+ Ce1  U33  1    -0.0006(4)      0
+ Ce1  U12  1     0.00227(19)    0
+ Ce1  U13  1     0              0.0006(3)
+ Ce1  U23  1     0             -0.0003(3)
+ Ce1  U11  2     0.0000(4)      0
+ Ce1  U22  2     0.0006(3)      0
+ Ce1  U33  2    -0.0002(5)      0
+ Ce1  U12  2     0.0001(3)      0
+ Ce1  U13  2     0             -0.0004(3)
+ Ce1  U23  2     0             -0.0005(3)
+ Si1  U11  1     0.0367(19)     0
+ Si1  U22  1     0.0232(17)     0
+ Si1  U33  1     0.043(3)       0
+ Si1  U12  1    -0.0010(14)     0
+ Si1  U13  1     0             -0.0013(12)
+ Si1  U23  1     0             -0.0003(12)
+ Si2  U11  1    -0.0035(15)     0
+ Si2  U22  1     0.0046(18)     0
+ Si2  U33  1    -0.005(3)       0
+ Si2  U12  1    -0.0012(12)     0
+ Si2  U13  1     0             -0.0042(15)
+ Si2  U23  1     0             -0.0090(16)
+ Si2  U11  2    -0.001(3)       0
+ Si2  U22  2     0.001(2)       0
+ Si2  U33  2    -0.005(3)       0
+ Si2  U12  2    -0.0002(18)     0
+ Si2  U13  2     0              0.003(2)
+ Si2  U23  2     0             -0.001(2)
+
+#=======================================================================
